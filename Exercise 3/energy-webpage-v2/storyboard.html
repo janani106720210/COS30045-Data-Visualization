@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Appliance Energy Consumption</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/script.js"></script>
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <nav class="navbar">
+            <!--Logo links back to home-->
+            <a href="index.html" class="logo-link" aria-label="Return to Home">
+                <img src="assets/img/PowerIcon.png" alt="Logo">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html"  target="_blank">Home</a></li>
+                <li><a href="television.html" target="_blank">Televisions</a></li>
+                <li><a href="storyboard.html" class="active" target="_blank">Storyboard</a></li>
+                <li><a href="about.html" target="_blank">About us</a></li>
+            </ul>
+        </nav>
+
+        <!--page content-->
+        <main>
+            <section class="content-section storyboard-section">
+            <h1>Storyboards</h1>
+            
+            <!--storyboard 1-->
+            <div class="storyboard-box">
+                <div class="storyboard-title">
+                    <h2>Storyboard 1: How frequent is each size of Television</h2>
+                </div>
+
+                <div class="storyboard-content">
+
+                    <!--graph-->
+                    <div class="storyboard-graph">
+                        <h3>Visualisation</h3>
+                        <img src="assets/img/q1_histogram.png" alt="Histogram showing the frequency of television screen sizes">
+
+                        <p class="graph-caption">Histogram showing the frequency of different television screen sizes</p>
+                    </div>
+
+                    <!--story-->
+                    <div class="storyboard-text">
+                        <div class="storyboard-card">
+                            <h3>Issue/Question</h3>
+                            <p>How frequent is each size of TV in the Australian TV market?</p>
+                        </div>
+
+                        <div class="storyboard-card">
+                            <h3>Describe</h3>
+                            <p>The distribution of television screen sizes in the dataset is shown by the histogram. We can see which sizes are more common and which are less common by grouping the screen sizes into ranges.</p>
+                        </div>
+
+                        <div class="storyboard-card">
+                            <h3>Demonstrate</h3>
+                            <p>A histogram is used to show the frequency of different television screen sizes. Each bar represents a range of screen sizes and the height of the bar represents how many TVs fall within that range.</p>
+                        </div>
+
+                        <div class="storyboard-card">
+                            <h3>Key Finding</h3>
+                            <p>The distribution shows that some television screen sizes are much more common than others. Most TVs are concentrated within commonly available screen size ranges, while some smaller and larger sizes occur less frequently.</p>
+                        </div>
+
+                        <div class="storyboard-card recommendation">
+                            <h3>Recommendation</h3>
+                            <p>Consumers can use the distribution of screen sizes to understand which TV sizes are commonly available when choosing a television</p>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--storyboard 2-->
+            <div class="storyboard-box">
+                <div class="storyboard-title">
+                    <h2>Storyboard 2: How does screen size impact Energy consumption?</h2>
+                </div>
+
+                <div class="storyboard-content">
+
+                    <!--graph-->
+                    <div class="storyboard-graph">
+                        <h3>Visualisation</h3>
+                        <img src="assets/img/q2_bar chart.png" alt="Bar chart somparing average labelled energy consumption across different TV screen sizes">
+
+                        <p class="graph-caption">Bar chart somparing average labelled energy consumption across different TV screen sizes (Small, Medium, Large).</p>
+                    </div>
+
+                    <!--story-->
+                    <div class="storyboard-text">
+                        <div class="storyboard-card">
+                            <h3>Issue/Question</h3>
+                            <p>How does television screen size affect energy consumption?</p>
+                        </div>
+
+                        <div class="storyboard-card">
+                            <h3>Describe</h3>
+                            <p>The bar chart compares the average annual energy consumption (in kWh/year) across three categories of screen sizes: Small, Medium, and Large. Each bar represents the average consumption for that category.</p>
+                        </div>
+
+                        <div class="storyboard-card">
+                            <h3>Demonstrate</h3>
+                            <p>A  bar chart is used to clearly show differences in energy consumption between screen sizes. The height of each bar indicates the average labelled energy usage for that category.</p>
+                        </div>
+
+                        <div class="storyboard-card">
+                            <h3>Key Finding</h3>
+                            <p>Larger screens consume significantly more energy (around 740 kWh/year) compared to medium screens (around 400 kWh/year) and small screens (around 150 kWh/year). This highlights a strong correlation between screen size and energy usage.</p>
+                        </div>
+
+                        <div class="storyboard-card recommendation">
+                            <h3>Recommendation</h3>
+                            <p>Consumers should consider both screen size and energy efficiency when purchasing a television. Smaller or medium-sized screens may offer significant energy savings compared to larger models.</p>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Janani</p>
+            <p>Generative AI acknowledgement;</p>
+        </footer>
+    </body>
+</html>
