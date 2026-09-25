@@ -1,0 +1,17 @@
+.responsive-svg-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+}
+
+.responsive-svg-container svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
