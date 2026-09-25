@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 4.1 - SVG House</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>Exercise 4.1: SVG House</h1>
+
+    <svg width="500" height="500" viewBox="0 0 500 500">
+
+        <!--sky-->
+        <rect x="0" y="0" width="500" height="380" fill="#87CEEB"/>
+        
+        <!--ground-->
+        <rect x="0" y="380" width="500" height="120" fill="#3CB043" />
+
+        <!--house body-->
+        <rect x="180" y="240" width="160" height="140" fill="#A9502B" stroke="#6E3319" stroke-width="2"/>
+
+        <!--roof-->
+        <polygon points="170,240 260,150 350,240" fill="#B71C1C" stroke="#6E3319" stroke-width="2"/>
+
+
+        <!--door-->
+        <rect x="245" y="320" width="30" height="60" fill="#5C3317" stroke="#3B2110" stroke-width="2" />
+        <circle cx="268" cy="352" r="2.5" fill="#FFD700" />
+
+        <!--window grouped-->
+        <g id="windows" stroke="#333333" stroke-width="2" fill="#CDEBF5">
+            <!--left-->
+            <rect x="0" y="0" width="30" height="30" transform="translate(205, 270)"/>
+            <!--right-->
+            <rect x="0" y="0" width="30" height="30" transform="translate(285, 270)"/>
+        </g>
+
+        <!--sun-->
+        <circle cx="100" cy="80" r="40" fill="#FFEB3B" stroke="#F9A825" stroke-width="4"/>
+
+        <!--tree-->
+        <g id="tree">
+            <!--trunk:rect-->
+            <rect x="55" y="300" width="20" height="80" fill="#8B5A2B"/>
+            <circle cx="65" cy="280" r="45" fill="#2E8B57" stroke="#1B5E39" stroke-width="2"/>
+        </g>
+
+        <!--path-->
+        <path d="M 260 380 C 230 420, 300 440, 260 500"
+            fill="none" stroke="#E8A93A" stroke-width="15" stroke-linecap="round"/>
+        <path d="M 260 380 C 230 420, 300 440, 260 500"
+            fill="none" stroke="#F5C766" stroke-width="4" stroke-dasharray="6,6"/>    
+
+        <!--chimney-->   
+         <rect x="300" y="170" width="20" height="50" fill="#8B5A2B" stroke="#6E3319" stroke-width="2/>"/>
+        <!--label-->
+        <text x="380" y="300" font-weight="bold" font-size="20" fill="#222222">House</text>
+    </svg>
+
+    <h1>Annotated Screenshot</h1>
+    <img src="assets/img/Annotated Screenshot.png" alt="Annotated house picture">
+
+    <h1>Before and After</h1>
+
+    <div class="side-by-side">
+        <figure>
+            <img src="assets/img/Before.png" alt="before customisation">
+            <figcaption>Before</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/img/After.png" alt="After Customisation">
+            <figcaption>After</figcaption>
+        </figure>
+    </div>
+    <table>
+        <tr>
+            <th>Element</th>
+            <th>Before</th>
+            <th>After</th>
+        </tr>
+        <tr>
+            <td>Roof Colour</td>
+            <td>Peru</td>
+            <td>Firebrick</td>
+        </tr>
+        <tr>
+            <td>Sun Position</td>
+            <td>cx=420</td>
+            <td>cx=100</td>
+        </tr>
+        <tr>
+            <td>New Item</td>
+            <td>-</td>
+            <td>Added a chimney</td>
+        </tr>
+    </table>
+</body>
+</html>

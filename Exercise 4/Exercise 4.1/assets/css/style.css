@@ -1,0 +1,48 @@
+body { 
+    font-family: sans-serif; 
+    background: #f0f0f0; 
+    text-align: center; 
+}
+
+svg { 
+    background-color: #ffffff;
+    border: 1px solid #ccc; 
+}
+
+.side-by-side{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.side-by-side figure{
+    margin: 0;
+    text-align: center;
+}
+
+.side-by-side img{
+    max-width: 350px;
+    border: 1px solid #ccc;
+}
+
+
+
+table {
+    border-collapse: collapse; 
+    margin: 20px auto; 
+    width: 100%;
+} 
+
+table, th, td {
+     border: 1px solid #999;
+}
+
+th, td {
+    padding: 8px 14px; 
+    text-align: left;
+}
+
+th {
+    background: #f5f5f5;
+}
