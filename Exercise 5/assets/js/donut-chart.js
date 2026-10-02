@@ -3,8 +3,8 @@
 const drawDonutChart = data => {
 
     //set up chart dimension 
-    const width = 1000;
-    const height = 500; 
+    const width = 800;
+    const height = 420; 
     const radius = Math.min(width, height) / 2 - 20; // leave some padding
 
     //create colour scale
@@ -27,7 +27,6 @@ const drawDonutChart = data => {
     const svg = d3.select("#donut-chart")
     .append("svg")
     .attr("viewBox", `0, 0, ${width}, ${height}`)
-    .style("border", "1px solid black"); 
 
     //create inner chart grp and apply margins
     const innerChart = svg

@@ -60,7 +60,6 @@ body{
 }
 
 nav-links a.active{
-    background: #ffcc00;
     color: #004080;
     font-weight: bold;
 }
@@ -165,102 +164,6 @@ hero h1{
 
 .panel p {
     margin: 0;
-}
-
-/*calculator*/
-.calculator-section {
-    border-top: 5px solid #ffcc00;
-}
-
-.calculator-form {
-    display: grid;
-    gap: 18px;
-    margin-top: 20px;
-}
-
-/*form grp*/
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
-    margin-bottom: 6px;
-    font-weight: bold;
-    color: #004080;
-}
-
-/*input*/
-.form-group input {
-    width: 100%;
-    padding: 12px;
-
-    border: 1px solid #bbb;
-    border-radius: 5px;
-
-    font-size: 1rem;
-}
-
-.form-group input:focus {
-    outline: none;
-    border-color: #0066cc;
-    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.15);
-}
-
-/*calculator box*/
-.calculator-button {
-    padding: 13px;
-    background: #004080;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.calculator-button:hover {
-    background: #0066cc;
-}
-
-/*result*/
-.results {
-    margin-top: 25px;
-    padding: 20px;
-
-    background: #e6f7ff;
-    border: 1px solid #004080;
-    border-radius: 8px;
-}
-
-.results h3 {
-    color: #004080;
-    margin-top: 0;
-}
-
-.results-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
-.result-card {
-    background: white;
-    padding: 15px;
-    border-radius: 6px;
-    border-left: 4px solid #0066cc;
-}
-
-.result-card strong {
-    display: block;
-    color: #004080;
-    margin-bottom: 5px;
-}
-
-.error-message {
-    color: #b00020;
-    font-weight: bold;
 }
 
 /*television card*/

@@ -27,18 +27,35 @@
         <!--main content-->
         <main>
             <section class="hero">
-            <h1>Appliance Energy Consumption</h1>
-            <p>Televisions vary considerably in how much electricity they use. The histogram below shows shows how many 
-                TVs in the data set full into each range of labelled annual energy consumption.
-            </p>
-
+            <h1>Technology Energy Charts</h1>
+            </section>
+            
+            <section class="content-section chart-card">
+                <!--vertical bar chart-->
+                <h2>Number of TV Models by Brand</h2>
+                <div class="responsive-svg-container" id="brand-chart"></div>
             </section>
 
-            <section class="content-section">
+            <section class="content-section chart-card">
+                <!--bar chart-->
+                <h2>Energy Consumption by Screen Type</h2>
+                <div id="bar-chart"></div>
+            </section>
+
+            <section class="content-section chart-card">
+                <!--line chart-->
+                <h2>Average Price Over Time</h2>
+                <div id="line-chart"></div>
+            </section>
+
+            <section class="content-section chart-card">
+                <!--Donut chart-->
+                <h2>TV Models by Screen Size</h2>
+                <div id="donut-chart"></div>
+            </section>
+
+            <section class="content-section chart-card">
                 <h2>Energy Consumption for different TV screen types and sizes</h2>
-
-                <p class="chart-subtitle">TVs vary considerably in energy consumption. </p>
-
                 <!--screen tech filter-->
                 <div id="filters_screen" class="filter-group"></div>
 
@@ -47,18 +64,21 @@
 
                 <!--sreensize filter-->
                 <div id="filters_size" class="filter-group"></div>
+            </section>
 
+            <section class="content-section chart-card">
                 <!--scatterplot-->
                 <h2 class="chart-heading">Energy Consumption by Star Rating</h2>
                 <div id="scatterplot" class="responsive-svg-container"></div>
-                
+            </section>
+            
+            <section class="content-section chart-card">
                 <p class="data-source">
                     <strong>Data Source</strong><br>
                     <a href="https://energyrating.gov.au/" target="_blank" rel="noopener">Energy Rating Data for household appliances - Televisions</a><br>
                     Download Jan 2026
                 </p>
             </section>
-            
         </main>
 
         <footer>
@@ -67,8 +87,12 @@
         </footer>
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script src="assets/js/script.js"></script>
-        <script src="assets/js/load-data.js"></script>
+        <script src="assets/D3/main.js"></script>
         <script src="assets/js/shared-constants.js"></script>
+        <script src="assets/js/bar-chart.js"></script>
+        <script src="assets/js/line-chart.js"></script>
+        <script src="assets/js/donut-chart.js"></script>
+        <script src="assets/js/load-data.js"></script>
         <script src="assets/js//interaction.js"></script>
         <script src="assets/js/histogram.js"></script>
         <script src="assets/js/scatterplot.js"></script>

@@ -1,22 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Energy Consumption</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Appliance Energy Consumption</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <nav class="navbar">
+            <!--Logo links back to home-->
+            <a href="index.html" class="logo-link" aria-label="Return to Home">
+                <img src="assets/img/PowerIcon.png" alt="Logo">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" target="_blank">Home</a></li>
+                <li><a href="television.html" target="_blank">Televisions</a></li>
+                <li><a href="storyboard.html" target="_blank">Storyboard</a></li>
+                <li><a href="graph.html" target="_blank">Graph</a></li>
+                <li><a href="about.html" target="_blank">About us</a></li>
+            </ul>
+        </nav>
 
-    <h1>Energy Consumption</h1>
+        <!--main content-->
+        <main>
+            <section class="hero">
+            <h1>Appliance Energy Consumption</h1>
+            <p>Placeholder content about energy use in Australia.</p>
+            </section>
+            
+            <!--introduction-->
+            <section class="content-section">
+                <h2>Energy Consumption in Australia</h2>
 
-    <div class="container">
-        <p>Learn how to reduce your household energy consumption.</p>
-    </div>
+                <p>Household appliance are an important part of everyday life.
+                    Appliance such as television, refrigerators, washing machines 
+                    and air conditioning consume electricity when they are operating.
+                </p>
 
-    <div class="responsive-svg-container"></div>
-  
-  <!-- Load the D3 library -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="assets/D3/main.js"></script>
+                <p>Understandig appliance power consumption can help users estimate
+                    their electricity usage and identify opportunities to reduce unnecessary enerygy consumption.
+                </p>
+            </section>
+            
+            <!--FAQ-->
+            <section class="content-section">
 
-</body>
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq">
+
+            <button class="accordion" type="button">What is energy consumption?
+            <span>+</span>
+            </button>
+
+            <div class="panel"><p>Energy consuption refers to the amount of electrical energy used by an application over a period of time.</p></div>
+            
+            <button class="accordion" type="button">How is energy consumption measured?
+                <span>+</span>
+            </button>
+            
+            <div class="panel"><p>Electricity consumption is commonly measured in kilowatt-hours (kWh). One kilowatt-hour represents using 1,000 watts of power for one hour.</p></div>
+
+            <button class="accordion" type="button">Why should I monitor appliance energy usage?
+                <span>+</span>
+            </button>
+            
+            <div class="panel"><p>Monitoring energy can help household understand electricity costs and make more energy-efficient choices</p></div>
+            
+            </div>
+            
+        </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Janani</p>
+            <p>Generative AI acknowledgement;</p>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>

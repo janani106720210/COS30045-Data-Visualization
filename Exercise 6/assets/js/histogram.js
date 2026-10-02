@@ -24,11 +24,11 @@ const drawHistogram = (data) => {
     const binsMaxLength = d3.max(bins, d => d.length);
 
     //set rhe domain and range for the x and y scales
-    xScale
+    xScaleH
     .domain([minEng, maxEng])
     .range([0, innerWidth]);
 
-    yScale
+    yScaleH
     .domain([0, binsMaxLength])
     .range([innerHeight, 0])
     .nice();    //round the y-axis values to a more human readable format
@@ -38,10 +38,10 @@ const drawHistogram = (data) => {
     .selectAll("rect")
     .data(bins)
     .join("rect")
-    .attr("x", d => xScale(d.x0))
-    .attr("y", d => yScale(d.length))
-    .attr("width", d => xScale(d.x1) - xScale(d.x0))
-    .attr("height", d => innerHeight - yScale(d.length))
+    .attr("x", d => xScaleH(d.x0))
+    .attr("y", d => yScaleH(d.length))
+    .attr("width", d => xScaleH(d.x1) - xScaleH(d.x0))
+    .attr("height", d => innerHeight - yScaleH(d.length))
     .attr("fill", barColour)
     .attr("stroke", bodyBackgroundColor)
     .attr("stroke-width", 2);
@@ -53,7 +53,7 @@ const drawHistogram = (data) => {
     .attr("transform", `translate(0, ${innerHeight})`)
     .call(bottomAxis);
 
-    const leftAxis = d3.axisLeft(yScale);
+    const leftAxis = d3.axisLeft(yScaleH);
     innerChart
     .append("g")
     .call(leftAxis);

@@ -1,8 +1,7 @@
 //create an svg object 
 const svg= d3.select(".responsive-svg-container")
 .append("svg")
-.attr("viewBox", "0 0 1100 900")
-.style("border", "1px solid black")
+.attr("viewBox", "0 0 1100 700")
 
 //domain = the range of values in data
 //range = the pixel space available in the svg for those values to map 

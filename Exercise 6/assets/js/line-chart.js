@@ -14,7 +14,6 @@ const drawLineChart = data =>{
     const svg = d3.select("#line-chart")
     .append("svg")
     .attr("viewBox", `-10, 0, ${width}, ${height}`)
-    .style("border", "1px solid black"); 
 
     //create inner chart grp and apply margins
     const innerChart = svg
