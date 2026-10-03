@@ -1,0 +1,45 @@
+/*for all visualisation*/
+#histogram,
+#scatterplot {
+    background: #fffaf0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#histogram,
+#scatterplot svg{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#histogram,
+#scatterplot text {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 12px;
+    fill: #333;
+}
+
+#histogram .axis-label,
+#scatterplot .axis-label{
+    font-size: 13px;
+    font-weight: bold;
+    fill: #004080;
+}
+
+.chart-subtitle{
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: -5px;
+}
+
+.data source {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+.chart-heading {
+    color: #0066cc;
+    margin-top: 35px;
+}
