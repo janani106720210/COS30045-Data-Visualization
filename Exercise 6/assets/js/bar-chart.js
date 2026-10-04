@@ -53,7 +53,7 @@ const drawBarChartB = data => {
     .append("text")
     .text("Energy Consumption (kWh)")
     .attr("x", -margin.left)
-    .attr("y", -40)
+    .attr("y", -25)
     .attr("text-anchor", "start");
 
     //draw bars

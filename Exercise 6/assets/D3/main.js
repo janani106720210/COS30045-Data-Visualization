@@ -34,14 +34,14 @@ const drawBarChart = data => {
     .attr("width", d => xScale(d.count) - 100)
     .attr("height", yScale.bandwidth())
     .attr("fill", "steelblue")
-    .attr("x", 100)
+    .attr("x", 120)
     .attr("y", 0);
 
     //add brand names
     barAndLabel
     .append("text")
     .text(d => d.brand)
-    .attr("x", 90)
+    .attr("x", 100)
     .attr("y", 15)
     .attr("text-anchor", "end")
     .style("font-size", "20px");
@@ -50,7 +50,7 @@ const drawBarChart = data => {
     barAndLabel
     .append("text")
     .text(d => d.count)
-    .attr("x", d => xScale(d.count) + 5)
+    .attr("x", d => xScale(d.count) + 25)
     .attr("y", 15)
     .style("font-size", "15px");
 }
