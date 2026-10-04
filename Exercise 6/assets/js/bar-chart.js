@@ -3,13 +3,7 @@
 
 const drawBarChartB = data => {
     //set up inner chart margin and dimention
-/*
-    const margin = {top: 60, right: 30, bottom: 25, left: 50};
-    const width = 600; 
-    const height = 350;
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
-    */
+
     //add the svg conatainer for the chart
     const svg = d3.select("#bar-chart")
     .append("svg")
